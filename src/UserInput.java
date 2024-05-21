@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class UnserInput {
+public class UserInput {
     // Parameter
     private Scanner scanner;
 
     // Constructor
-    public UnserInput(){
+    public UserInput(){
         scanner = new Scanner(System.in);
     }
 
