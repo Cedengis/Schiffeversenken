@@ -30,7 +30,12 @@ public class Menu {
     }
 
     public void startGame(){
+        if (gamePossible()){
 
+        }else {
+            System.out.println("Current settings are not possible!\nPlease change the settings to less ships.");
+            showMenu();
+        }
     }
 
     public void settings(){
@@ -54,6 +59,10 @@ public class Menu {
 
     public void exit(){
         System.exit(0);
+    }
+
+    private boolean gamePossible(){
+        return shipTwo * 2 + shipThree * 3 + shipFour * 4 + shipFive * 5 + shipSix * 6 <= 50 && shipTwo * 2 + shipThree * 3 + shipFour * 4 + shipFive * 5 + shipSix * 6 >0;
     }
 
     // Getter & Setter
